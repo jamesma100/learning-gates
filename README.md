@@ -2,7 +2,7 @@
 Machine learning for logic gates.
 Basically just a dumb linear classifier and hence cannot predict something like XOR.
 
-In essence, we calculate a single-variable derivative for a cost function `sqrt(((f(x) + b) - y)^2)` which we use for our step function.
+In essence, we calculate partial derivatives for a cost function `sqrt((f(x) - y)^2)`, where `f(x) = w*x + b`, which we use for our step function.
 As long as the learning rate is reasonably small and number of iterations is reasonably large, we can drive the cost to zero.
 
 ## Setup
